@@ -1,0 +1,242 @@
+body {
+  color: #40514E;
+  margin: 0;
+  /*Sets margin to 0 around the element so that its edge
+  would not have padding*/
+  text-align: center;
+  /*Text-align element allows you to format text
+  in the code by entering the parameters following the element. Example:
+  center, justify, inherit, etc*/
+  font-family: 'Merriweather', serif;
+  /*Using the font-family element you
+  can change the font displayed on your webpage. To help this work against
+  compatiblity issues, you can list multiple fonts, with the first listed
+  given priority, meaning, the webpage would try to default to that font,
+  but if it isn't installed on the viewer's system, it would default to
+  the next listed fonts
+  fonts.google.com is a great place to get embedded fonts*/
+}
+
+h1 {
+  line-height: 2;
+  color: #66BFBF;
+  font-size: 5.62rem; /*Using an element like this makes the text static. Example,
+  font-size: 90px; means that the text is always going to be set at 90px, even
+  if the content of the page is scaled. Please note that static text do not get
+  inherited by the "child" from the "parent". Dynamic texts, however, do.
+  To make it scalable, the element has
+  to be dynamic. font-size: 100%; is 16px, so to set text as 90px is 90/16 which
+  is 562.5. So it's 562.5%
+  The element "em" is olden days code for having an element be the width of the
+  capital letter "M" so for instance, 1em means 1x the size of M. In code,
+  it's now 1em is equaled to 16px, or the base 100% of the size of text.
+  16px = 100% = 1em
+  In other words, 562.5% = 5.62em
+  However, "em" by itself would inherit the "parent" attributes' scaling. Meaning,
+  if the parent's size is set to 100% and this one is set to 100%, this one would
+  then become 200%. To bypass this, "rem" or "root em" is used. "rem" ignores all
+  "parent" settings and only uses the size of the child relative to itself*/
+
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+  /*width: 10%;
+  margin: 0 auto 0 auto; /*This is another way to center elements. <H1> is the
+  child of the <body> so its prioritized in order. Even with the "width" set at
+  10%, the margin can be centered using "0 auto 0 auto". If the 4 values are
+  specified, the first value "0" represents the "top", the second value
+  represents "Right", the third represents "bottom" and the forth represents
+  "left". These values are ALWAYS read in a clockwise direction.
+  If one value is given, it represents all 4 sides (margin: 10px).
+  If only 2 values are given (margin: 1.6em 20px;) it's top and bottom (1.6em),
+  left and right (20px). If its 3 (margin: 10px 3% -1em;) then its top (10px),
+  left and right (3%) and bottom (-1em).
+  "Auto" usues automatic percentages left and right to keep the elements centered*/
+}
+
+h2 {
+  font-weight: normal;
+  color: #66BFBF;
+  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+  padding-bottom: 10px;
+}
+
+h3 {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #EAF6F6;
+}
+
+p {
+  line-height: 2;
+}
+
+hr {
+  border: dotted #EAF6F6 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+
+.skill-row {
+width: 50%;
+margin: 100px auto 100px auto;
+text-align: left;
+}
+
+.top-container {
+  background-color: #EAF6F6;
+  position: relative;
+  padding-top: 100px;
+  /*height: 100px;
+  width: 100px;
+  position: absolute;
+  /*height: 200px;
+  width: 200px;
+  border: solid 10px;
+  padding: 20px; */
+}
+
+.middle-container {
+  /*background-color: #66BFBF;
+  height: 200px;
+  width: 200px;
+  /*position: absolute; This allows the element to be moved relative
+  to its current position. Right, or left attributes would move the
+  object in that direction according to the parameters that come after,
+  such as 10px
+  left: 100px;
+  top: 100px;
+  border: solid 20px; */
+  margin: 100px 0;
+}
+
+
+.bottom-container {
+  background-color: #66BFBF;
+  padding: 50px 0 20px;
+  /*height: 200px;
+  width: 200px;
+  /*position: absolute;
+  left: 200px;
+  top: 200px;
+  border: solid 10px;
+  margin-left: 500px;*/
+}
+
+.web {
+  text-decoration: underline;
+  /*Text-decoration can alter text
+  formatting styles, such as underline, strikeout, italic, etc*/
+  color: #10BFBF;
+}
+
+.intro {
+  width: 30%;
+  margin: auto;
+  /*margin: 100px auto 100px auto;*/
+}
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 40px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 250px;
+  bottom: 300px;
+}
+
+.rw-jpg {
+border-radius: 100px;
+height: 200px;
+width: 200px;
+}
+
+.working {
+  border-radius: 100px;
+  height: 200px;
+  width: 200px;
+  float: left; /*The float attribute tells the code to wrap the text around the item
+  instructed. In this case, "float" is telling the photo to stay on the left and it
+  would wrap the text on the same line to the right*/
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.investment {
+  border-radius: 100px;
+  height: 200px;
+  width: 200px;
+  float: right;
+  margin-left: 30px;
+}
+
+.artist {
+  border-radius: 100px;
+  height: 200px;
+  width: 200px;
+  float: left;
+  margin-right: 30px;
+}
+
+.contact-me {
+  font-family: 'Montserrat', sans-serif;
+  /*font-size: 2.5rem;*/
+}
+
+.contact-message {
+  width: 40%;
+  margin: 40px auto 60px;
+}
+
+.copyright {
+  color: #EAF6F6;
+  font-size: 0.75REM;
+  padding: 20PX 0;
+}
+
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+/*.web-dev {
+  clear: left; /*The Clear attribute is basically the "anti-float". Instructing
+  the code to stay on the left and it would clear everything on the right and put
+  the on the line directly below
+}*/
